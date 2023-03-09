@@ -75,14 +75,16 @@ const NotesList = () => {
           <Note {...note} key={note.id} />
         ))}
       </Masonry>
-      <PaginationWrapper>
-        <StyledButton onClick={onPrevious} disabled={hidePrevious}>
-          Previous
-        </StyledButton>
-        <StyledButton onClick={onNext} disabled={hideNext}>
-          Next
-        </StyledButton>
-      </PaginationWrapper>
+      {totalNotes > 0 && (
+        <PaginationWrapper>
+          <StyledButton onClick={onPrevious} disabled={hidePrevious}>
+            Previous
+          </StyledButton>
+          <StyledButton onClick={onNext} disabled={hideNext}>
+            Next
+          </StyledButton>
+        </PaginationWrapper>
+      )}
     </Wrapper>
   );
 };
