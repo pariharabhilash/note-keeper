@@ -1,3 +1,7 @@
+# Demo 
+
+Deployed the project in github pages https://pariharabhilash.github.io/note-keeper/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
